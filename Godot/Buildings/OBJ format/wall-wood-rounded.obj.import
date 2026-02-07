@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlrasdpspolfy"
+path="res://.godot/imported/wall-wood-rounded.obj-e6c7facb7f4ff764df247fd12040bd03.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-wood-rounded.obj-e6c7facb7f4ff764df247fd12040bd03.mesh"]
+
+source_file="res://Buildings/OBJ format/wall-wood-rounded.obj"
+dest_files=["res://.godot/imported/wall-wood-rounded.obj-e6c7facb7f4ff764df247fd12040bd03.mesh", "res://.godot/imported/wall-wood-rounded.obj-e6c7facb7f4ff764df247fd12040bd03.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
