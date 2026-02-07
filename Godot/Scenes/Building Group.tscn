@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bkif1ejis3nb2"]
+
+[ext_resource type="ArrayMesh" uid="uid://d10yrsgcc5g07" path="res://Buildings/OBJ format/wall-rounded.obj" id="1_67mt2"]
+[ext_resource type="ArrayMesh" uid="uid://wu57q5yk8fex" path="res://Buildings/OBJ format/wall-slope.obj" id="2_ta31w"]
+[ext_resource type="ArrayMesh" uid="uid://cdkt2ivf1m4u5" path="res://Buildings/OBJ format/wall-window-glass.obj" id="3_7qe8a"]
+[ext_resource type="ArrayMesh" uid="uid://c0mueobny3lcn" path="res://Buildings/OBJ format/wall-window-round.obj" id="4_vfd2s"]
+[ext_resource type="ArrayMesh" uid="uid://doky48oh7kmsd" path="res://Buildings/OBJ format/wall-wood-broken.obj" id="5_fnb0i"]
+[ext_resource type="ArrayMesh" uid="uid://d1fnn87bmds08" path="res://Buildings/OBJ format/wall-door.obj" id="6_dqhan"]
+[ext_resource type="ArrayMesh" uid="uid://y24svq6ihsgm" path="res://Buildings/OBJ format/road.obj" id="7_iornu"]
+[ext_resource type="ArrayMesh" uid="uid://blw1j2oknu15j" path="res://Buildings/OBJ format/rock-large.obj" id="8_4c3bq"]
+[ext_resource type="ArrayMesh" uid="uid://caayc8nfp4x3u" path="res://Buildings/OBJ format/rock-small.obj" id="9_gwpml"]
+[ext_resource type="ArrayMesh" uid="uid://bias48cs14ee8" path="res://Buildings/OBJ format/rock-wide.obj" id="10_idtme"]
+[ext_resource type="ArrayMesh" uid="uid://c5sfpq12dcgrg" path="res://Buildings/OBJ format/planks.obj" id="11_15e36"]
+[ext_resource type="ArrayMesh" uid="uid://c0v73vfy6r2yr" path="res://Buildings/OBJ format/planks-opening.obj" id="12_6mqfh"]
+[ext_resource type="ArrayMesh" uid="uid://d3krwe81twu1g" path="res://Buildings/OBJ format/pillar-stone.obj" id="13_pe3ht"]
+[ext_resource type="ArrayMesh" uid="uid://cws3quqthss21" path="res://Buildings/OBJ format/overhang.obj" id="14_uqcrv"]
+[ext_resource type="ArrayMesh" uid="uid://dls04ygqhcdi5" path="res://Buildings/OBJ format/lantern.obj" id="15_5d0qi"]
+[ext_resource type="ArrayMesh" uid="uid://d2f7cid30l0nh" path="res://Buildings/OBJ format/hedge-large-gate.obj" id="16_g7bof"]
+[ext_resource type="ArrayMesh" uid="uid://chmlyudit2wdr" path="res://Buildings/OBJ format/fountain-square-detail.obj" id="17_6k3vn"]
+[ext_resource type="ArrayMesh" uid="uid://dm7tj7dmveyct" path="res://Buildings/OBJ format/fence-broken.obj" id="18_6klpk"]
+[ext_resource type="ArrayMesh" uid="uid://by38vyvch2t3f" path="res://Buildings/OBJ format/cart.obj" id="19_kn15t"]
+[ext_resource type="ArrayMesh" uid="uid://dxp6jbrdlnw1n" path="res://Buildings/OBJ format/banner-green.obj" id="20_ta31w"]
+
+[node name="BuildingGroup" type="Node3D" unique_id=359633417]
+
+[node name="WallRounded" type="MeshInstance3D" parent="." unique_id=1984604031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52107155, 1.1920929e-07, 0.5431833)
+mesh = ExtResource("1_67mt2")
+
+[node name="WallSlope" type="MeshInstance3D" parent="." unique_id=507099821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37731385, -1.1920929e-07, 0.4426509)
+mesh = ExtResource("2_ta31w")
+
+[node name="WallWindowGlass" type="MeshInstance3D" parent="." unique_id=614152462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51522535, 0, -0.44699585)
+mesh = ExtResource("3_7qe8a")
+
+[node name="WallWindowRound" type="MeshInstance3D" parent="." unique_id=1439403226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49295062, 0, -3.3728905)
+mesh = ExtResource("4_vfd2s")
+
+[node name="WallWoodBroken" type="MeshInstance3D" parent="." unique_id=2062502855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5157236, 0, -1.4324099)
+mesh = ExtResource("5_fnb0i")
+
+[node name="WallDoor" type="MeshInstance3D" parent="." unique_id=1014713115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.50164264, 0.009447336, -2.3730533)
+mesh = ExtResource("6_dqhan")
+
+[node name="Road" type="MeshInstance3D" parent="." unique_id=255899454]
+transform = Transform3D(5.473404, 0, 0, 0, 1, 0, 0, 0, 10.011341, 0.2186904, 2.3841858e-07, -1.7100668)
+mesh = ExtResource("7_iornu")
+
+[node name="RockLarge" type="MeshInstance3D" parent="." unique_id=692860223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7568831, -0.024037838, 1.889768)
+mesh = ExtResource("8_4c3bq")
+
+[node name="RockSmall" type="MeshInstance3D" parent="." unique_id=104091497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9865661, 0, -5.068242)
+mesh = ExtResource("9_gwpml")
+
+[node name="RockWide" type="MeshInstance3D" parent="." unique_id=1066784160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.068912506, -2.3841858e-07, -0.7360761)
+mesh = ExtResource("10_idtme")
+
+[node name="Planks" type="MeshInstance3D" parent="." unique_id=87134555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42955136, -2.3841858e-07, -2.6365185)
+mesh = ExtResource("11_15e36")
+
+[node name="PlanksOpening" type="MeshInstance3D" parent="." unique_id=1128353183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43416286, 1.1920929e-07, -3.638061)
+mesh = ExtResource("12_6mqfh")
+
+[node name="PillarStone" type="MeshInstance3D" parent="." unique_id=1801702308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37232065, 0, 0.2780106)
+mesh = ExtResource("13_pe3ht")
+
+[node name="Overhang" type="MeshInstance3D" parent="." unique_id=622449557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530221, 0, 0.24612266)
+mesh = ExtResource("14_uqcrv")
+
+[node name="Lantern" type="MeshInstance3D" parent="." unique_id=1698870259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.113381, 0, -2.7222452)
+mesh = ExtResource("15_5d0qi")
+
+[node name="HedgeLargeGate" type="MeshInstance3D" parent="." unique_id=1416593735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0930735, 0, -2.3046064)
+mesh = ExtResource("16_g7bof")
+
+[node name="FountainSquareDetail" type="MeshInstance3D" parent="." unique_id=835806715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7369838, 0, -5.5349526)
+mesh = ExtResource("17_6k3vn")
+
+[node name="FenceBroken" type="MeshInstance3D" parent="." unique_id=900957021]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.42684388, 0, -3.7250795)
+mesh = ExtResource("18_6klpk")
+
+[node name="Cart" type="MeshInstance3D" parent="." unique_id=229178303]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6392245, 0, -3.2314494)
+mesh = ExtResource("19_kn15t")
+
+[node name="BannerGreen" type="MeshInstance3D" parent="." unique_id=873804133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79856396, 0, -0.84264326)
+mesh = ExtResource("20_ta31w")
