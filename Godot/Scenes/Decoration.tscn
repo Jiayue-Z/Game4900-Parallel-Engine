@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://d0j4f22bpkab3"]
+
+[ext_resource type="ArrayMesh" uid="uid://d10yrsgcc5g07" path="res://Buildings/OBJ format/wall-rounded.obj" id="1_vytmi"]
+[ext_resource type="ArrayMesh" uid="uid://wu57q5yk8fex" path="res://Buildings/OBJ format/wall-slope.obj" id="2_nubw6"]
+[ext_resource type="ArrayMesh" uid="uid://cdkt2ivf1m4u5" path="res://Buildings/OBJ format/wall-window-glass.obj" id="3_6ogex"]
+[ext_resource type="ArrayMesh" uid="uid://c0mueobny3lcn" path="res://Buildings/OBJ format/wall-window-round.obj" id="4_naalq"]
+[ext_resource type="ArrayMesh" uid="uid://doky48oh7kmsd" path="res://Buildings/OBJ format/wall-wood-broken.obj" id="5_jpxqm"]
+[ext_resource type="ArrayMesh" uid="uid://d1fnn87bmds08" path="res://Buildings/OBJ format/wall-door.obj" id="6_f2vnp"]
+[ext_resource type="ArrayMesh" uid="uid://cws3quqthss21" path="res://Buildings/OBJ format/overhang.obj" id="7_gt8cd"]
+[ext_resource type="ArrayMesh" uid="uid://d2f7cid30l0nh" path="res://Buildings/OBJ format/hedge-large-gate.obj" id="8_e117q"]
+[ext_resource type="ArrayMesh" uid="uid://chmlyudit2wdr" path="res://Buildings/OBJ format/fountain-square-detail.obj" id="9_m1v71"]
+[ext_resource type="ArrayMesh" uid="uid://dm7tj7dmveyct" path="res://Buildings/OBJ format/fence-broken.obj" id="10_0s1nq"]
+[ext_resource type="ArrayMesh" uid="uid://dxp6jbrdlnw1n" path="res://Buildings/OBJ format/banner-green.obj" id="11_kjqld"]
+[ext_resource type="ArrayMesh" uid="uid://c5sfpq12dcgrg" path="res://Buildings/OBJ format/planks.obj" id="12_5ol2j"]
+[ext_resource type="ArrayMesh" uid="uid://c0v73vfy6r2yr" path="res://Buildings/OBJ format/planks-opening.obj" id="13_vj1qb"]
+[ext_resource type="ArrayMesh" uid="uid://d3krwe81twu1g" path="res://Buildings/OBJ format/pillar-stone.obj" id="14_dwe71"]
+
+[node name="Decoration" type="Node3D" unique_id=1064001395]
+
+[node name="WallRounded" type="MeshInstance3D" parent="." unique_id=1444345962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52107155, 1.1920929e-07, 0.5431833)
+mesh = ExtResource("1_vytmi")
+
+[node name="WallSlope" type="MeshInstance3D" parent="." unique_id=1433314274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37731385, -1.1920929e-07, 0.4426509)
+mesh = ExtResource("2_nubw6")
+
+[node name="WallWindowGlass" type="MeshInstance3D" parent="." unique_id=599752728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51522535, 0, -0.44699585)
+mesh = ExtResource("3_6ogex")
+
+[node name="WallWindowRound" type="MeshInstance3D" parent="." unique_id=873378871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49295062, 0, -3.3728905)
+mesh = ExtResource("4_naalq")
+
+[node name="WallWoodBroken" type="MeshInstance3D" parent="." unique_id=704696544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5157236, 0, -1.4324099)
+mesh = ExtResource("5_jpxqm")
+
+[node name="WallDoor" type="MeshInstance3D" parent="." unique_id=53337716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.50164264, 0.009447336, -2.3730533)
+mesh = ExtResource("6_f2vnp")
+
+[node name="Overhang" type="MeshInstance3D" parent="." unique_id=1601122324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530221, 0, 0.24612266)
+mesh = ExtResource("7_gt8cd")
+
+[node name="HedgeLargeGate" type="MeshInstance3D" parent="." unique_id=1586721671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0930735, 0, -2.3046064)
+mesh = ExtResource("8_e117q")
+
+[node name="FountainSquareDetail" type="MeshInstance3D" parent="." unique_id=354522361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7369838, 0, -5.5349526)
+mesh = ExtResource("9_m1v71")
+
+[node name="FenceBroken" type="MeshInstance3D" parent="." unique_id=292791006]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.42684388, 0, -3.7250795)
+mesh = ExtResource("10_0s1nq")
+
+[node name="BannerGreen" type="MeshInstance3D" parent="." unique_id=2082601003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79856396, 0, -0.84264326)
+mesh = ExtResource("11_kjqld")
+
+[node name="Planks" type="MeshInstance3D" parent="." unique_id=281353949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42955136, -2.3841858e-07, -2.6365185)
+mesh = ExtResource("12_5ol2j")
+
+[node name="PlanksOpening" type="MeshInstance3D" parent="." unique_id=697514786]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43416286, 1.1920929e-07, -3.638061)
+mesh = ExtResource("13_vj1qb")
+
+[node name="PillarStone" type="MeshInstance3D" parent="." unique_id=1717198090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37232065, 0, 0.2780106)
+mesh = ExtResource("14_dwe71")
