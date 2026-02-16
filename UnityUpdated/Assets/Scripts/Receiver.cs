@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class R : MonoBehaviour
+public class Receiver : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OnCalled(string message)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(message);
     }
 }
