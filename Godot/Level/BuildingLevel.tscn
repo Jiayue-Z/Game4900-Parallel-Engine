@@ -5,6 +5,8 @@
 [ext_resource type="ArrayMesh" uid="uid://drs2mdbg7sj5p" path="res://Buildings/OBJ format/chimney-base.obj" id="3_fd3tq"]
 [ext_resource type="ArrayMesh" uid="uid://fvbuufc57fc7" path="res://Buildings/OBJ format/chimney.obj" id="4_325x7"]
 [ext_resource type="ArrayMesh" uid="uid://bs04a5vf7ud41" path="res://Buildings/OBJ format/chimney-top.obj" id="5_vvruf"]
+[ext_resource type="Script" uid="uid://idybruh8d0no" path="res://Level/Caller.gd" id="6_325x7"]
+[ext_resource type="Script" uid="uid://i2sof6xvhg2g" path="res://Level/Receiver.gd" id="7_vvruf"]
 
 [node name="Node3D" type="Node3D" unique_id=1719122232]
 
@@ -25,3 +27,10 @@ mesh = ExtResource("4_325x7")
 [node name="ChimneyTop" type="MeshInstance3D" parent="ChimneyBase/Chimney" unique_id=1741841214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020489872, 1.0096989, -0.0058472157)
 mesh = ExtResource("5_vvruf")
+
+[node name="Caller" type="Node3D" parent="." unique_id=193068965 node_paths=PackedStringArray("receiver")]
+script = ExtResource("6_325x7")
+receiver = NodePath("../Receiver")
+
+[node name="Receiver" type="Node3D" parent="." unique_id=1785481197]
+script = ExtResource("7_vvruf")
