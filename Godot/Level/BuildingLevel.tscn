@@ -7,6 +7,11 @@
 [ext_resource type="ArrayMesh" uid="uid://bs04a5vf7ud41" path="res://Buildings/OBJ format/chimney-top.obj" id="5_vvruf"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="6_vvruf"]
 [ext_resource type="Script" uid="uid://bpja7vjt2615n" path="res://Level/controller.gd" id="7_vvruf"]
+[ext_resource type="Script" uid="uid://b86mvxifnksvu" path="res://Level/COIN.gd" id="8_qonjh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vvruf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qonjh"]
 
 [node name="Node3D" type="Node3D" unique_id=1719122232]
 
@@ -28,6 +33,20 @@ mesh = ExtResource("4_325x7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020489872, 1.0096989, -0.0058472157)
 mesh = ExtResource("5_vvruf")
 
-[node name="ProtoController" parent="." unique_id=1323206793 instance=ExtResource("6_vvruf")]
+[node name="Area3D" type="Area3D" parent="." unique_id=1736313809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41005313, 0.17244923, 0.6086301)
+script = ExtResource("8_qonjh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=446885977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99999213, 0.8614838, 0)
+shape = SubResource("BoxShape3D_vvruf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=1620112356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.004168, 0.8497335, 0)
+mesh = SubResource("BoxMesh_qonjh")
+
+[node name="Player" type="Node3D" parent="." unique_id=1873885634]
+
+[node name="PlayerController" parent="Player" unique_id=1323206793 instance=ExtResource("6_vvruf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2850051, 0.14318013, 1.8742759)
 script = ExtResource("7_vvruf")
