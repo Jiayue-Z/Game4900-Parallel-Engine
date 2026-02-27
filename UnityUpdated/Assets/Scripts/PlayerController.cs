@@ -11,6 +11,7 @@ namespace AOTADev
     [RequireComponent(typeof(Rigidbody))]
     public class PlayerController : MonoBehaviour
     {
+        public int CoinCount = 0;
         [Header("Camera")]
         [SerializeField] private Camera _camera;
         public Camera MainCamera { get => _camera; set => _camera = value; }
