@@ -7,11 +7,20 @@
 [ext_resource type="ArrayMesh" uid="uid://dls04ygqhcdi5" path="res://Buildings/OBJ format/lantern.obj" id="15_5d0qi"]
 [ext_resource type="ArrayMesh" uid="uid://by38vyvch2t3f" path="res://Buildings/OBJ format/cart.obj" id="19_kn15t"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5wtos"]
+size = Vector3(1, 0.5292969, 1)
+
 [node name="BuildingGroup" type="Node3D" unique_id=359633417]
 
 [node name="Road" type="MeshInstance3D" parent="." unique_id=255899454]
 transform = Transform3D(5.473404, 0, 0, 0, 1, 0, 0, 0, 10.011341, 0.2186904, 2.3841858e-07, -1.7100668)
 mesh = ExtResource("7_iornu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Road" unique_id=525766604]
+
+[node name="a" type="CollisionShape3D" parent="Road/StaticBody3D" unique_id=356087581]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.23535156, 0)
+shape = SubResource("BoxShape3D_5wtos")
 
 [node name="RockLarge" type="MeshInstance3D" parent="." unique_id=692860223]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7568831, -0.024037838, 1.889768)

@@ -5,8 +5,11 @@
 [ext_resource type="ArrayMesh" uid="uid://drs2mdbg7sj5p" path="res://Buildings/OBJ format/chimney-base.obj" id="3_fd3tq"]
 [ext_resource type="ArrayMesh" uid="uid://fvbuufc57fc7" path="res://Buildings/OBJ format/chimney.obj" id="4_325x7"]
 [ext_resource type="ArrayMesh" uid="uid://bs04a5vf7ud41" path="res://Buildings/OBJ format/chimney-top.obj" id="5_vvruf"]
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="6_vvruf"]
-[ext_resource type="Script" uid="uid://bpja7vjt2615n" path="res://Level/controller.gd" id="7_vvruf"]
+[ext_resource type="ArrayMesh" uid="uid://bk46kgmkyoc7r" path="res://Buildings/OBJ format/tree.obj" id="6_325x7"]
+[ext_resource type="Script" uid="uid://bns2oge6rmi0" path="res://Scenes/proto_controller/proto_controller.gd" id="7_vvruf"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_325x7"]
+height = 2.331787
 
 [node name="Node3D" type="Node3D" unique_id=1719122232]
 
@@ -28,6 +31,19 @@ mesh = ExtResource("4_325x7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020489872, 1.0096989, -0.0058472157)
 mesh = ExtResource("5_vvruf")
 
-[node name="ProtoController" parent="." unique_id=1323206793 instance=ExtResource("6_vvruf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2850051, 0.14318013, 1.8742759)
+[node name="Player" type="Node3D" parent="." unique_id=220619430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60845757, 0, 1.3518833)
 script = ExtResource("7_vvruf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=936464049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7506337, 0, 0)
+mesh = ExtResource("6_325x7")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Player" unique_id=1742600023]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/RigidBody3D" unique_id=977821108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7858826, 1.2720947, 0.10862166)
+shape = SubResource("CapsuleShape3D_325x7")
+
+[node name="Camera3D" type="Camera3D" parent="Player" unique_id=2087663155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.745407, 1.2190591, 1.5947721)
