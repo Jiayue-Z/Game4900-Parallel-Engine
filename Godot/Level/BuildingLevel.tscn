@@ -47,6 +47,6 @@ mesh = SubResource("BoxMesh_qonjh")
 
 [node name="Player" type="Node3D" parent="." unique_id=1873885634]
 
-[node name="PlayerController" parent="Player" unique_id=1323206793 instance=ExtResource("6_vvruf")]
+[node name="PlayerController" parent="Player" unique_id=1323206793 groups=["Player"] instance=ExtResource("6_vvruf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2850051, 0.14318013, 1.8742759)
 script = ExtResource("7_vvruf")
