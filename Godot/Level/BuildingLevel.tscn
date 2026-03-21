@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dcee830aisqaw"]
 
+[ext_resource type="Script" uid="uid://fdevye17qeox" path="res://Level/Attack.gd" id="1_325x7"]
 [ext_resource type="PackedScene" uid="uid://bkif1ejis3nb2" path="res://Scenes/Building Group.tscn" id="1_wcbhv"]
 [ext_resource type="PackedScene" uid="uid://d0j4f22bpkab3" path="res://Scenes/Decoration.tscn" id="2_60tkm"]
 [ext_resource type="ArrayMesh" uid="uid://drs2mdbg7sj5p" path="res://Buildings/OBJ format/chimney-base.obj" id="3_fd3tq"]
@@ -7,6 +8,7 @@
 [ext_resource type="ArrayMesh" uid="uid://bs04a5vf7ud41" path="res://Buildings/OBJ format/chimney-top.obj" id="5_vvruf"]
 
 [node name="Node3D" type="Node3D" unique_id=1719122232]
+script = ExtResource("1_325x7")
 
 [node name="BuildingGroup" parent="." unique_id=359633417 instance=ExtResource("1_wcbhv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7484622, 0.090424776, 1.6741306)
